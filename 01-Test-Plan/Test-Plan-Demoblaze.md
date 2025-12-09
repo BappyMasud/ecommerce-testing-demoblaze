@@ -55,8 +55,8 @@ Brief description of Demoblaze and what this test plan aims to achieve.
 ## 6. Test Schedule & Estimation (high-level)  
 | Phase | Start Date | End Date | Deliverables |
 |---|---|---|---|  
-| Test Plan & Strategy | **today** | +1 day | Test Plan document |  
-| Test Case Design & Review | +1 day | +2 days | Test Cases (manual) |  
+| Test Plan & Strategy | 01/11/25 | 05/11/25 | Test Plan document |  
+| Test Case Design & Review | 10/11/25 | 15/11/25 | Test Cases (manual) |  
 | Manual Test Execution | +3 days | +5 days | Test execution results, Bug reports |  
 | Automation Script Development | +6 days | +10 days | Automation framework, scripts |  
 | API Testing | +6 days | +8 days | Postman collection + reports |  
