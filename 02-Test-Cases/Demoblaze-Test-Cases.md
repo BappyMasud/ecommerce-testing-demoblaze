@@ -6,15 +6,15 @@
 |------|------------------------|--------------|--------|-----------|-----------------|---------------|----------|---------|------------|
 | TC001 | Verify user can open signup dialog | Website is loaded | 1. Click "Sign Up" | N/A | Signup modal should open | Signup model has been opened | P1 | PASS |
 | TC002 | Verify signup with valid data | Signup modal open | 1. Enter valid username + password 2. Click Sign Up | username: test123, pass: Test@123 | Success alert: "Sign up successful" | Sign up is successful | P1 | PASS |
-| TC003 | Verify signup with existing user | Existing account | 1. Enter same username 2. Click Sign Up | username: test123 | Error alert: "This user already exist" |
-| TC004 | Verify signup with empty fields | Signup modal open | Leave fields blank → Click Sign Up | blank | Browser should show validation or error |
+| TC003 | Verify signup with existing user | Existing account | 1. Enter same username 2. Click Sign Up | username: test123 | Error alert: "This user already exist" | Showed alert: "This user already exist" | P4 | PASS |
+| TC004 | Verify signup with empty fields | Signup modal open | Leave fields blank → Click Sign Up | blank | Browser should show validation or error | Showed alart: "Please fill out username & password" | P3 | PASS |
 
 ---
 
 ## 2. Login
 
-| TC ID | Description | Precondition | Steps | Test Data | Expected Result |
-|------|-------------|--------------|--------|-----------|-----------------|
+| TC ID | Test Case Description | Precondition | Steps | Test Data | Expected Result | Actual Result | Priority | Results | Commnents |
+|------|------------------------|--------------|--------|-----------|-----------------|---------------|----------|---------|------------|
 | TC005 | Verify user login with valid credentials | User exists | 1. Open Login modal 2. Enter valid creds 3. Click Login | username: test123, pass: Test@123 | Login success → Username appears on navbar |
 | TC006 | Verify login with invalid password | User exists | Same as above | wrong pass | Alert: "Wrong password" or login failure |
 | TC007 | Verify login with non-existing user | None | Same | random username | Alert: "User does not exist" |
