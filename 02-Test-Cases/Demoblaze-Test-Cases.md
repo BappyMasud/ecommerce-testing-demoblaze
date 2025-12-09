@@ -15,10 +15,10 @@
 
 | TC ID | Test Case Description | Precondition | Steps | Test Data | Expected Result | Actual Result | Priority | Results | Commnents |
 |------|------------------------|--------------|--------|-----------|-----------------|---------------|----------|---------|------------|
-| TC005 | Verify user login with valid credentials | User exists | 1. Open Login modal 2. Enter valid creds 3. Click Login | username: test123, pass: Test@123 | Login success → Username appears on navbar |
-| TC006 | Verify login with invalid password | User exists | Same as above | wrong pass | Alert: "Wrong password" or login failure |
-| TC007 | Verify login with non-existing user | None | Same | random username | Alert: "User does not exist" |
-| TC008 | Verify login with empty fields | None | Leave fields empty | blank | Should not login |
+| TC005 | Verify user login with valid credentials | User exists | 1. Open Login modal 2. Enter valid creds 3. Click Login | username: sohel123, pass: sohel@123 | Login success → Username appears on navbar | Login success → Username appears on navbar | P1 | PASS | 
+| TC006 | Verify login with invalid password | User exists | Same as above | wrong pass | Alert: "Wrong password" or login failure | Showed alert: "Wrong password" | P3 | PASS |
+| TC007 | Verify login with non-existing user | None | Same | random username | Alert: "User does not exist" | Showed alert: "User does not exist" | P4 | PASS |
+| TC008 | Verify login with empty fields | None | Leave fields empty | blank | Should not login | Showed alart: "Please fill out Username and Password" | P3 | PASS |
 
 ---
 
