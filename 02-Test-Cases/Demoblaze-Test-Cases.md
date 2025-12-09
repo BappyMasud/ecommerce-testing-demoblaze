@@ -24,28 +24,28 @@
 
 ## 3. Product Browsing & Categories
 
-| TC ID | Description | Precondition | Steps | Expected Result |
-|------|-------------|--------------|--------|-----------------|
-| TC009 | Verify all product categories appear | None | View homepage | All categories displayed |
-| TC010 | Verify filtering by category | None | Click Phones/Laptops/Monitors | Products related to that category shown |
-| TC011 | Verify product details page | None | Click any product | Product image, price, description displayed |
+| TC ID | Test Case Description | Precondition | Steps | Test Data | Expected Result | Actual Result | Priority | Results | Commnents |
+|------|------------------------|--------------|--------|-----------|-----------------|---------------|----------|---------|------------|
+| TC009 | Verify all product categories appear | None | View homepage | All categories displayed | All categories displayed | P2 | PASS |
+| TC010 | Verify filtering by category | None | Click Phones/Laptops/Monitors | Products related to that category shown | Products related to that category shown | P3 | PASS |
+| TC011 | Verify product details page | None | Click any product | Product image, price, description displayed | Product image, price, description displayed | P2 | PASS |
 
 ---
 
 ## 4. Cart Functionality
 
-| TC ID | Description | Precondition | Steps | Expected Result |
-|------|-------------|--------------|--------|-----------------|
-| TC012 | Add item to cart | Logged in | Open product → Click "Add to cart" | Alert: “Product added” |
-| TC013 | Remove item from cart | Item exists in cart | Go to Cart → Delete an item | Item should be removed |
-| TC014 | Verify cart total updates | Items in cart | Add 2 items | Total price = sum of products |
+| TC ID | Test Case Description | Precondition | Steps | Test Data | Expected Result | Actual Result | Priority | Results | Commnents |
+|------|------------------------|--------------|--------|-----------|-----------------|---------------|----------|---------|------------|
+| TC012 | Add item to cart | Logged in | Open product → Click "Add to cart" | Alert: “Product added” | Shown alert: “Product added” | P0 | PASS | 
+| TC013 | Remove item from cart | Item exists in cart | Go to Cart → Delete an item | Item should be removed | Item is removed | P3 | PASS |
+| TC014 | Verify cart total updates | Items in cart | Add 2 items | Total price = sum of products | Shown sum of products accurately | P0 | PASS |
 
 ---
 
 ## 5. Checkout / Place Order
 
-| TC ID | Description | Precondition | Steps | Expected Result |
-|------|-------------|--------------|--------|-----------------|
+| TC ID | Test Case Description | Precondition | Steps | Test Data | Expected Result | Actual Result | Priority | Results | Commnents |
+|------|------------------------|--------------|--------|-----------|-----------------|---------------|----------|---------|------------|
 | TC015 | Place order with valid data | Items in cart | 1. Go to Cart 2. Click "Place Order" 3. Fill form 4. Purchase | Order placed → Confirmation popup |
 | TC016 | Try placing order with empty fields | Items in cart | Click Purchase without data | Alert or validation |
 | TC017 | Verify purchase confirmation data | Order placed | Observe popup | Should show amount + Name + Credit Card |
