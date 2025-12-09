@@ -26,9 +26,9 @@
 
 | TC ID | Test Case Description | Precondition | Steps | Test Data | Expected Result | Actual Result | Priority | Results | Commnents |
 |------|------------------------|--------------|--------|-----------|-----------------|---------------|----------|---------|------------|
-| TC009 | Verify all product categories appear | None | View homepage | All categories displayed | All categories displayed |P2 | PASS |      |
-| TC010 | Verify filtering by category | None | Click Phones/Laptops/Monitors | Products related to that category shown | Products related to that category shown | P3 | PASS |      |
-| TC011 | Verify product details page | None | Click any product | Product image, price, description displayed | Product image, price, description displayed | P2 | PASS |     |
+| TC009 | Verify all product categories appear | None | View homepage | N/A | All categories displayed | All categories displayed |P2 | PASS |
+| TC010 | Verify filtering by category | None | Click Phones/Laptops/Monitors | N/A | Products related to that category shown | Products related to that category shown | P3 | PASS |
+| TC011 | Verify product details page | None | Click any product | N/A | Product image, price, description displayed | Product image, price, description displayed | P2 | PASS |
 
 ---
 
@@ -36,9 +36,9 @@
 
 | TC ID | Test Case Description | Precondition | Steps | Test Data | Expected Result | Actual Result | Priority | Results | Commnents |
 |------|------------------------|--------------|--------|-----------|-----------------|---------------|----------|---------|------------|
-| TC012 | Add item to cart | Logged in | Open product → Click "Add to cart" | Alert: “Product added” | Shown alert: “Product added” | P0 | PASS |     |
-| TC013 | Remove item from cart | Item exists in cart | Go to Cart → Delete an item | Item should be removed | Item is removed | P3 | PASS |     |
-| TC014 | Verify cart total updates | Items in cart | Add 2 items | Total price = sum of products | Shown sum of products accurately | P0 | PASS |      |
+| TC012 | Add item to cart | Logged in | Open product → Click "Add to cart" | N/A | Alert: “Product added” | Shown alert: “Product added” | P0 | PASS |
+| TC013 | Remove item from cart | Item exists in cart | Go to Cart → Delete an item | N/A | Item should be removed | Item is removed | P3 | PASS |
+| TC014 | Verify cart total updates | Items in cart | Add 2 items | N/A | Total price = sum of products | Shown sum of products accurately | P0 | PASS |
 
 ---
 
@@ -46,23 +46,23 @@
 
 | TC ID | Test Case Description | Precondition | Steps | Test Data | Expected Result | Actual Result | Priority | Results | Commnents |
 |------|------------------------|--------------|--------|-----------|-----------------|---------------|----------|---------|------------|
-| TC015 | Place order with valid data | Items in cart | 1. Go to Cart 2. Click "Place Order" 3. Fill form 4. Purchase | Order placed → Confirmation popup | Order placed with Confirmation popup | P1 | PASS |     |
-| TC016 | Try placing order with empty fields | Items in cart | Click Purchase without data | Alert or validation | Shown alart: "Please fill out Name and Creditcard" | P3 | PASS |    |
-| TC017 | Verify purchase confirmation data | Order placed | Observe popup | Should show amount + Name + Credit Card | Showed amount + Name + Credit Card | P2 | PASS |     |
+| TC015 | Place order with valid data | Items in cart | 1. Go to Cart 2. Click "Place Order" 3. Fill form 4. Purchase | N/A | Order placed → Confirmation popup | Order placed with Confirmation popup | P1 | PASS |
+| TC016 | Try placing order with empty fields | Items in cart | Click Purchase without data | N/A | Alert or validation | Shown alart: "Please fill out Name and Creditcard" | P3 | PASS |
+| TC017 | Verify purchase confirmation data | Order placed | Observe popup | N/A | Should show amount + Name + Credit Card | Showed amount + Name + Credit Card | P2 | PASS |
 
 ---
 
 ## 6. Logout
 
-| TC ID | Description | Precondition | Steps | Expected Result |
-|------|-------------|--------------|--------|-----------------|
-| TC018 | Verify user logout | Logged in | Click Logout | Login/Signup buttons reappear |
+| TC ID | Test Case Description | Precondition | Steps | Test Data | Expected Result | Actual Result | Priority | Results | Commnents |
+|------|------------------------|--------------|--------|-----------|-----------------|---------------|----------|---------|------------|
+| TC018 | Verify user logout | Logged in | Click Logout | N/A | Login/Signup buttons appear | Login/Signup buttons appeared | P3 | PASS |
 
 ---
 
 ## 7. UI Test Cases
 
-| TC ID | Description | Precondition | Steps | Expected Result |
-|------|-------------|--------------|--------|-----------------|
-| TC019 | Verify homepage UI loads properly | None | Load homepage | All UI components visible |
-| TC020 | Verify responsiveness | Resize browser | Adjust window size | UI should not break |
+| TC ID | Test Case Description | Precondition | Steps | Test Data | Expected Result | Actual Result | Priority | Results | Commnents |
+|------|------------------------|--------------|--------|-----------|-----------------|---------------|----------|---------|------------|
+| TC019 | Verify homepage UI loads properly | None | Load homepage | N/A | All UI components visible | All UI components visible | P2 | PASS |
+| TC020 | Verify responsiveness | Resize browser | Adjust window size | N/A | UI should not break | UI does not break | P2 | PASS |
