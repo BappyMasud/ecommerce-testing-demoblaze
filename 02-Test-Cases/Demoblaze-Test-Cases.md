@@ -26,7 +26,7 @@
 
 | TC ID | Test Case Description | Precondition | Steps | Test Data | Expected Result | Actual Result | Priority | Results | Commnents |
 |------|------------------------|--------------|--------|-----------|-----------------|---------------|----------|---------|------------|
-| TC009 | Verify all product categories appear | None | View homepage | All categories displayed | All categories displayed | P2 | PASS |
+| TC009 | Verify all product categories appear | None | View homepage | All categories displayed | All categories displayed |P2 | PASS |
 | TC010 | Verify filtering by category | None | Click Phones/Laptops/Monitors | Products related to that category shown | Products related to that category shown | P3 | PASS |
 | TC011 | Verify product details page | None | Click any product | Product image, price, description displayed | Product image, price, description displayed | P2 | PASS |
 
