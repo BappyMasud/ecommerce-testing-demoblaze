@@ -2,8 +2,8 @@
 
 ## 1. User Registration / Signup
 
-| TC ID | Test Case Description | Precondition | Steps | Test Data | Expected Result |
-|------|------------------------|--------------|--------|-----------|-----------------|
+| TC ID | Test Case Description | Precondition | Steps | Test Data | Expected Result | Actual Result | Priority | Results | Commnents |
+|------|------------------------|--------------|--------|-----------|-----------------|---------------|----------|---------|------------|
 | TC001 | Verify user can open signup dialog | Website is loaded | 1. Click "Sign Up" | N/A | Signup modal should open |
 | TC002 | Verify signup with valid data | Signup modal open | 1. Enter valid username + password 2. Click Sign Up | username: test123, pass: Test@123 | Success alert: "Sign up successful" |
 | TC003 | Verify signup with existing user | Existing account | 1. Enter same username 2. Click Sign Up | username: test123 | Error alert: "This user already exist" |
