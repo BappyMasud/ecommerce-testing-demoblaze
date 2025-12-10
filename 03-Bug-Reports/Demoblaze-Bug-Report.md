@@ -27,6 +27,9 @@ Signup is successful with a single-digit password.
 ### Evidence
 - Screenshot of signup form with “1”
 - Confirmation popup
+
+### Screenshot:
+![BUG001](./bug001.png)
 ---
 
 ## Bug ID: BUG002
