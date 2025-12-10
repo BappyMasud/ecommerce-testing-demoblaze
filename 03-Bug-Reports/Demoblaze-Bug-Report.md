@@ -2,42 +2,6 @@
 
 ## Bug ID: BUG001
 ### Title:
-Login form allows submission with empty fields
-
-### Severity:
-High  
-### Priority:
-High  
-
-### Environment:
-- Browser: Chrome 120  
-- OS: Windows 10  
-- URL: https://demoblaze.com  
-
-### Precondition:
-Website is loaded
-
-### Steps to Reproduce:
-1. Open the Login modal  
-2. Leave both username & password empty  
-3. Click "Log in"
-
-### Expected Result:
-System should show validation message or block submission.
-
-### Actual Result:
-The system attempts to log in (no error message).
-
-### Evidence:
-- Screenshot: (add later)  
-- Video: (optional)
-
-### Status:
-Open
----
-
-## Bug ID: BUG002
-### Title:
 Signup form accepts weak passwords
 
 ### Severity:
@@ -59,9 +23,13 @@ Password should require minimum length or complexity.
 
 ### Actual:
 Signup is successful with a single-digit password.
+
+### Evidence
+- Screenshot of signup form with “1”
+- Confirmation popup
 ---
 
-## Bug ID: BUG003
+## Bug ID: BUG002
 ### Title:
 Cart does not update total price after deleting an item
 
@@ -81,3 +49,58 @@ Total price should decrease accordingly.
 
 ### Actual:
 Total price stays the same.
+
+### Evidence
+- Cart before delete
+- Cart after delete
+- Total unchanged
+---
+
+## Bug ID: BUG003
+### Title:
+Place Order accepts empty credit card format
+
+### Severity:
+Medium  
+### Priority:
+Medium
+
+### Description:
+There is no password strength validation.
+
+### Steps to Reproduce:
+1. Add item to cart  
+2. Go to Cart → Place Order  
+3. Enter invalid card number like "abc"  
+4. Click Purchase
+   
+### Expected:
+The order does not accepted without valid credit card format.
+
+### Actual:
+Order is still accepted.
+
+### Evidence
+- Invalid card input
+- Order confirmation displayed
+---
+
+## Bug ID: BUG004
+### Title:
+Category filter not updating product count properly
+
+### Severity:
+Medium  
+### Priority:
+Low
+
+### Steps to Reproduce:
+1. Click Phones  
+2. Then click Next page  
+3. Observe product list  
+   
+### Expected:
+Products should be displayed according to the category listing.
+
+### Actual:
+Sometimes leftover items from the previous category appear.
