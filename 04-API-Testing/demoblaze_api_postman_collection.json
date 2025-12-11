@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "275049f3-6560-41c6-8c2c-ecef2726f421",
+		"name": "DemoBlaze APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41111761",
+		"_collection_link": "https://warped-meteor-82150.postman.co/workspace/FakeStore-API-Tests~e9a87553-8b2a-4891-91be-fab922f0d31f/collection/41111761-275049f3-6560-41c6-8c2c-ecef2726f421?action=share&source=collection_link&creator=41111761"
+	},
+	"item": [
+		{
+			"name": "ProductList",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Response has Items array\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData).to.have.property('Items');",
+							"    pm.expect(jsonData.Items).to.be.an('array');",
+							"});",
+							"",
+							"pm.test(\"Items array is not empty\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.Items.length).to.be.greaterThan(0);",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{demobaz}}/entries",
+					"host": [
+						"{{demobaz}}"
+					],
+					"path": [
+						"entries"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "authToken",
+			"value": "",
+			"type": "default"
+		},
+		{
+			"key": "demobaz",
+			"value": "",
+			"type": "default"
+		}
+	]
+}
