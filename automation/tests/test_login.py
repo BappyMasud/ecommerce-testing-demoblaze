@@ -1,8 +1,8 @@
 import sys
 import os
 
-# Add the 'automation/' folder to Python path
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+# Add automation/ folder to Python path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from utilities.driver_factory import DriverFactory
 from pages.login_page import LoginPage
