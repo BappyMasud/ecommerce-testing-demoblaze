@@ -1,6 +1,6 @@
-from automation.utilities.driver_factory import DriverFactory
-from automation.pages.login_page import LoginPage
-from automation.pages.home_page import HomePage
+from utilities.driver_factory import DriverFactory
+from pages.login_page import LoginPage
+from pages.home_page import HomePage
 import time
 
 def test_login():
