@@ -1,9 +1,12 @@
+from .base_page import BasePage
 from selenium.webdriver.common.by import By
-from pages.base_page import BasePage
 
 class HomePage(BasePage):
-
-    LOGGED_IN_USER = (By.ID, "nameofuser")
+    USER_LABEL = (By.ID, "nameofuser")
 
     def is_user_logged_in(self):
-        return self.is_visible(self.LOGGED_IN_USER)
+        try:
+            text = self.get_text(self.USER_LABEL)
+            return "Welcome" in text
+        except:
+            return False
