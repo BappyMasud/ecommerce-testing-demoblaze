@@ -1,11 +1,3 @@
-import sys
-import os
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
-
-from automation.utilities.driver_factory import DriverFactory
-from automation.pages.login_page import LoginPage
-
 from utilities.driver_factory import DriverFactory
 from pages.login_page import LoginPage
 from pages.home_page import HomePage
