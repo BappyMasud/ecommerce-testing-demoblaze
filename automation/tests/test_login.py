@@ -12,7 +12,7 @@ def test_login():
 
     login.open_login()
     time.sleep(1)  # wait for login modal to open
-    login.login("testuser", "testpassword")
+    login.login("sohel123", "sohel@123")
 
     assert home.is_user_logged_in()
 
